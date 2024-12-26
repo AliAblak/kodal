@@ -10,7 +10,7 @@
     <br>
     <canvas id="güvenlikkodualani" width="150" height="50"></canvas>
     <br><br>
-    <button oncanplay="degistir()">Kodu Değiştir</button>
+    <button onclick="degistir()">Kodu Değiştir</button>
 
 <script type="text/javascript" language="javascript">
 var islem;
@@ -24,12 +24,12 @@ function example() {
 function degistir(){
     var metin = "";
     for (var i = 0; i < 6; i++) {
-        var rastgeledeger = Math.floor(Math.random() * 10);
+        var rastgeledeger = Math.floor();
         if (Math.round(rastgeledeger) == 0) {
-            metin += String.fromCharCode(65 + Math.floor(Math.random() * 26));
+            metin += String.fromCharCode(48+9 * Math.random());
         } else {
-            metin += rastgeledeger;
-        }
+            metin += String.fromCharCode(65+25 * Math.random());
+        }}
     }
     islem.clearRect(0, 0, 150, 50);
     islem.font = "25px Arial";
